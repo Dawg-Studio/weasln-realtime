@@ -60,11 +60,11 @@ const submitNotification = async ({
         }
         const baseUrl =
             process.env.NODE_ENV === "production"
-                ? "https://zefer.blog"
+                ? "https://weaseln.vercel.app"
                 : "http://localhost:3000";
         const resend = new Resend(process.env.RESEND_API_KEY);
         const { data, error } = await resend.emails.send({
-            from: "ZeFer <notifications@zefer.blog>",
+            from: "weaseln <notifications@weaseln.blog>",
             to: [user.email],
             subject: `${from} ${message}`,
             html: notificationTemplate({

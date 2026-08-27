@@ -16,7 +16,7 @@ const io = new Server(httpServer, {
     cors: {
         origin:
             env === "production"
-                ? "https://zefer.vercel.app"
+                ? "https://weaseln.vercel.app"
                 : "http://localhost:3000", // Adjust this to your client's origin
         methods: ["GET", "POST"],
     },

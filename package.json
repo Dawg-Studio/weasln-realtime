@@ -1,7 +1,7 @@
 {
-  "name": "zefersocketio",
+  "name": "weasln-realtime",
   "version": "0.0.1",
-  "description": "socketio server for zefer",
+  "description": "Realtime Socket.IO server for weaseln notifications and comments.",
   "main": "index.ts",
   "scripts": {
     "build": "tsc && npx prisma generate",
