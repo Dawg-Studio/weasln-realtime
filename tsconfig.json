@@ -14,5 +14,5 @@
         "strictFunctionTypes": true,
         "noImplicitReturns": true
     },
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules", "build"]
 }
