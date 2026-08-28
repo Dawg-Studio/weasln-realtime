@@ -17,7 +17,7 @@ export default function notificationTemplate({
       <head>
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
       </head>
-      <div style="display:none;overflow:hidden;line-height:1px;opacity:0;max-height:0;max-width:0">Notifications from ZeFer<div></div>
+      <div style="display:none;overflow:hidden;line-height:1px;opacity:0;max-height:0;max-width:0">Notifications from weaseln<div></div>
       </div>
     
       <body style="background-color:rgb(255,255,255);margin-top:auto;margin-bottom:auto;margin-left:auto;margin-right:auto;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;padding-left:0.5rem;padding-right:0.5rem">
@@ -28,7 +28,7 @@ export default function notificationTemplate({
                 <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="margin-top:32px">
                   <tbody>
                     <tr>
-                      <td><img alt="Vercel" height="37" src="https://www.zefer.blog/zefer.svg" style="display:block;outline:none;border:none;text-decoration:none;margin-top:0px;margin-bottom:0px;margin-left:auto;margin-right:auto" width="40" /></td>
+                      <td><img alt="weaseln logo" height="37" src="https://weaseln.vercel.app/icons/weaslnnobg.png" style="display:block;outline:none;border:none;text-decoration:none;margin-top:0px;margin-bottom:0px;margin-left:auto;margin-right:auto" width="40" /></td>
                     </tr>
                   </tbody>
                 </table>
