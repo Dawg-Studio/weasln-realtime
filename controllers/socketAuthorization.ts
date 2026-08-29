@@ -8,10 +8,9 @@ const socketAuthorization = async (
     next: (err?: ExtendedError | undefined) => void,
 ) => {
     if (process.env.SOCKET_SERVER_SECRET !== socket.handshake.auth.token) {
-        throw new Error("Unauthorized");
-    } else {
-        next();
+        return next(new Error("Unauthorized"));
     }
+    next();
 };
 
 export default socketAuthorization;
