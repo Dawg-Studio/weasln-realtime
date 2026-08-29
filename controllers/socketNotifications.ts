@@ -50,7 +50,12 @@ const submitNotification = async ({
             actionUrl: actionUrl,
         },
     });
-    if (user?.sendNotificationEmail && user.email && user.name) {
+    if (
+        user?.sendNotificationEmail &&
+        user.email &&
+        user.name &&
+        process.env.RESEND_API_KEY
+    ) {
         let postName: string | undefined = "";
         if (postId) {
             const post = await prisma.post.findUnique({
