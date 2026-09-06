@@ -63,10 +63,7 @@ const submitNotification = async ({
             });
             postName = post?.title;
         }
-        const baseUrl =
-            process.env.NODE_ENV === "production"
-                ? "https://weaseln.vercel.app"
-                : "http://localhost:3000";
+        const baseUrl = process.env.APP_URL || "http://localhost:3000";
         const resend = new Resend(process.env.RESEND_API_KEY);
         const { data, error } = await resend.emails.send({
             from: "weaseln <notifications@weaseln.blog>",

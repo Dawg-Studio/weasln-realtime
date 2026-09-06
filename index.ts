@@ -9,15 +9,11 @@ import { submitNotification } from "./controllers/socketNotifications";
 import prisma from "./db";
 
 const PORT = process.env.PORT || 5000;
-const env = process.env.NODE_ENV;
 
 const httpServer = http.createServer();
 const io = new Server(httpServer, {
     cors: {
-        origin:
-            env === "production"
-                ? "https://weaseln.vercel.app"
-                : "http://localhost:3000", // Adjust this to your client's origin
+        origin: process.env.APP_URL || "http://localhost:3000",
         methods: ["GET", "POST"],
     },
 });
