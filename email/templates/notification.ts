@@ -28,7 +28,7 @@ export default function notificationTemplate({
                 <table align="center" width="100%" border="0" cellPadding="0" cellSpacing="0" role="presentation" style="margin-top:32px">
                   <tbody>
                     <tr>
-                      <td><img alt="weaseln logo" height="37" src="https://weaseln.vercel.app/icons/weaslnnobg.png" style="display:block;outline:none;border:none;text-decoration:none;margin-top:0px;margin-bottom:0px;margin-left:auto;margin-right:auto" width="40" /></td>
+                      <td><img alt="weaseln logo" height="37" src="${process.env.APP_URL || "https://weaseln.vercel.app"}/icons/weaslnnobg.png" style="display:block;outline:none;border:none;text-decoration:none;margin-top:0px;margin-bottom:0px;margin-left:auto;margin-right:auto" width="40" /></td>
                     </tr>
                   </tbody>
                 </table>
